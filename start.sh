@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Manus AI Startup Script
-echo "🚀 Starting Manus AI (Local Browser Mode)..."
+echo "🚀 Starting Nimbus AI (Local Browser Mode)..."
 
 # Start backend API server in background
 echo "🔧 Starting FastAPI backend server..."
@@ -34,7 +33,7 @@ sleep 5
 
 echo "✅ Frontend server running on http://localhost:3000"
 echo ""
-echo "🎉 Manus AI (Local Browser Mode) is now running!"
+echo "🎉 Nimbus AI (Local Browser Mode) is now running!"
 echo "   Frontend: http://localhost:3000"
 echo "   Backend API: http://localhost:8000"
 echo "   API Docs: http://localhost:8000/docs"

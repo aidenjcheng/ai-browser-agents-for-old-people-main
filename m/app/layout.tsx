@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Manus AI Clone",
+  title: "Nimbus AI",
   description: "AI-powered browser automation",
 };
 

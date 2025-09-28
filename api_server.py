@@ -77,7 +77,7 @@ browser_instances: Dict[str, Any] = {}
 
 
 app = FastAPI(
-    title="Manus AI - Local Browser-Use API",
+    title="Nimbus AI - Local Browser-Use API",
     description="API server for local Browser-Use automation",
     version="1.0.0"
 )
@@ -119,7 +119,7 @@ class SystemStatusResponse(BaseModel):
 @app.get("/")
 async def root():
     """Root endpoint"""
-    return {"message": "Manus AI - Local Browser-Use API Server", "status": "running"}
+    return {"message": "Nimbus AI - Local Browser-Use API Server", "status": "running"}
 
 @app.get("/health")
 async def health():

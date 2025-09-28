@@ -1,4 +1,4 @@
-# Manus AI - Local Browser Automation
+# Nimbus AI - Local Browser Automation
 
 A comprehensive browser automation system using local Browser-Use with a modern web interface for controlling browser tasks.
 
@@ -90,7 +90,7 @@ This will automatically:
 - Start the Python FastAPI backend on `http://localhost:8000`
 - Start the Next.js frontend on `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to use Manus AI.
+Open [http://localhost:3000](http://localhost:3000) in your browser to use Nimbus AI.
 
 ### Manual Startup (Alternative)
 
@@ -102,7 +102,7 @@ source .venv/bin/activate
 python api_server.py
 
 # Terminal 2: Frontend
-cd manus-ai-clone
+cd m
 bun run dev
 ```
 
@@ -236,7 +236,7 @@ The system automatically detects your platform and configures Chrome paths:
 python -m pytest
 
 # Frontend tests
-cd manus-ai-clone && npm test
+cd m && npm test
 ```
 
 **also update the files .env .env.local. I wasn't able to since you can't push.env**
@@ -249,7 +249,7 @@ cd manus-ai-clone && npm test
 ├── requirements.txt        # Python dependencies (browser-use only)
 ├── env.example            # Environment configuration template
 ├── start.sh               # Automated startup script for both services
-├── manus-ai-clone/         # Next.js frontend
+├── m/         # Next.js frontend
 │   ├── app/               # Next.js app router
 │   ├── components/        # React components (calls Python API)
 │   └── ...

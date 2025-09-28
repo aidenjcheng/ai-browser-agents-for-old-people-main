@@ -64,7 +64,7 @@ export function ChatInterface({ messages, chatId }: ChatInterfaceProps) {
         },
         body: JSON.stringify({
           task: taskDescription,
-          metadata: { source: "manus-ai-frontend" }
+          metadata: { source: "nimbus-ai-frontend" }
         }),
       })
 

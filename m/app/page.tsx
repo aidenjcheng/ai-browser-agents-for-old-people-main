@@ -98,7 +98,7 @@ function HomeContent() {
           <div className="flex-1 flex pt-20 justify-center px-8">
             <div className="max-w-2xl w-full space-y-8">
               <div className="text-left space-y-4">
-                <h2 className="text-3xl font-bold">L2 AI</h2>
+                <h2 className="text-3xl font-bold">Nimbus AI</h2>
                 <p className="text-lg text-muted-foreground">
                   Describe what you want the browser to do and I'll help you automate it.
                 </p>
