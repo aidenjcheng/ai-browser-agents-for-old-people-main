@@ -203,17 +203,6 @@ print(f"URLs visited: {result['urls_visited']}")
 OPENAI_API_KEY=your_openai_api_key
 # OR
 GOOGLE_API_KEY=your_google_gemini_api_key
-
-# Optional: FastAPI Server Configuration
-PORT=8000
-
-# Optional: Browser configuration
-# BROWSER_HEADLESS=false  # Set to true to run headless
-# BROWSER_WINDOW_WIDTH=1200
-# BROWSER_WINDOW_HEIGHT=800
-
-# Optional: Disable telemetry
-# ANONYMIZED_TELEMETRY=false
 ```
 
 ### Platform-Specific Browser Paths
