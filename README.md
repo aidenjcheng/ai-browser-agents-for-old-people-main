@@ -74,7 +74,7 @@ echo "GOOGLE_API_KEY=your_google_gemini_api_key_here" > .env
 # NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
 
 # Install Node.js dependencies for the frontend
-cd manus-ai-clone
+cd m
 bun install
 cd ..
 ```
@@ -238,6 +238,8 @@ python -m pytest
 # Frontend tests
 cd manus-ai-clone && npm test
 ```
+
+**also update the files .env .env.local. I wasn't able to since you can't push.env**
 
 ### Code Structure
 
