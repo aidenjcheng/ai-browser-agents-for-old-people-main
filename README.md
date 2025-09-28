@@ -62,8 +62,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Set up environment variables
-cp env.example .env
-# Edit .env and add your API key (OPENAI_API_KEY or GOOGLE_API_KEY)
+# Create a .env file in the root directory with your API key:
+echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
+# OR for Google Gemini:
+echo "GOOGLE_API_KEY=your_google_gemini_api_key_here" > .env
+
+# Optional: Add these lines to .env for memory storage (requires local Supabase setup):
+# SUPABASE_URL=http://127.0.0.1:54321
+# SUPABASE_ANON_KEY=your_supabase_anon_key_here
+# NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321
+# NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
 
 # Install Node.js dependencies for the frontend
 cd manus-ai-clone

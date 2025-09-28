@@ -24,11 +24,15 @@ from supabase import create_client, Client
 
 load_dotenv()
 
-# Initialize Supabase client for memory storage
-supabase: Client = create_client(
-    os.getenv('SUPABASE_URL', ''),
-    os.getenv('SUPABASE_ANON_KEY', '')
-)
+# Initialize Supabase client for memory storage (optional)
+supabase_url = os.getenv('SUPABASE_URL', '')
+supabase_key = os.getenv('SUPABASE_ANON_KEY', '')
+
+if supabase_url and supabase_key:
+    supabase: Client = create_client(supabase_url, supabase_key)
+else:
+    supabase = None
+    print("Warning: Supabase not configured. Memory functionality will be disabled.")
 
 # Initialize LLM for memory generation
 memory_llm = ChatOpenAI(model='gpt-4.1-mini')
@@ -262,6 +266,10 @@ async def generate_and_store_memory(user_prompt: str, task_result: str, user_id:
     Generate personalization insights from user prompts and store them as memories.
     Only creates memories when there are genuinely useful insights.
     """
+    # Skip if Supabase is not configured
+    if supabase is None:
+        return
+
     try:
         # Create prompt for memory generation
         memory_prompt = f"""
