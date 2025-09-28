@@ -44,7 +44,7 @@ Choose one of the following:
 - Visit [OpenAI Platform](https://platform.openai.com/api-keys)
 - Create a new API key
 - Add to `.env`: `OPENAI_API_KEY=your_key_here`
-
+- 
 **Google Gemini (Free):**
 - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 - Create a new API key
@@ -77,6 +77,11 @@ echo "GOOGLE_API_KEY=your_google_gemini_api_key_here" > .env
 cd m
 bun install
 cd ..
+```
+
+Run this code in terminal. It allows the app to interact with your browser.
+```bash
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome_cdp"
 ```
 
 ### 4. Run Everything
