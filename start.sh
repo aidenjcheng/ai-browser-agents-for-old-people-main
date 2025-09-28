@@ -25,7 +25,7 @@ echo "✅ Backend server running on http://localhost:8000"
 
 # Start frontend in background
 echo "🎨 Starting Next.js frontend..."
-cd manus-ai-clone
+cd m
 bun run dev &
 FRONTEND_PID=$!
 
